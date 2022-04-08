@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'todos',
-    loadChildren: () => import('./features/todos/pages/todolist/todolist.module').then((mod) => mod.TodolistModule),
+    loadChildren: () => import('./features/todos/todos.module').then((mod) => mod.TodosModule),
   }
 ];
 

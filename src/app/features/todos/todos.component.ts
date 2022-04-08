@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
-import { TodosService } from '../../todos.service';
+import { TodosService } from './todos.service';
 
 @Component({
-  selector: 'app-todolist',
-  templateUrl: './todolist.component.html',
-  styleUrls: ['./todolist.component.scss']
+  selector: 'app-todos',
+  templateUrl: './todos.component.html',
+  styleUrls: ['./todos.component.scss']
 })
-export class TodolistComponent implements OnInit {
+export class TodosComponent implements OnInit {
 
   constructor(private readonly todosService: TodosService) { }
 
